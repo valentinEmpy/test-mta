@@ -1,0 +1,18 @@
+_schema-version: "3"
+ID: com.sap.sample.mta.circular
+version: 0.1.0
+
+modules:
+  - name: second-to-be-deployed
+    type: java.tomee
+    path: target/circular-0.0.2-SNAPSHOT.war
+    parameters:
+      memory: 512M
+      disk-quota: 256M
+    
+  - name: first-to-be-deployed
+    type: java.tomee
+    path: target/circular-0.0.1-SNAPSHOT.war
+    parameters:
+      memory: 512M
+      disk-quota: 256M

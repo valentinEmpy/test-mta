@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+
+Name: target/circular-0.0.2-SNAPSHOT.war
+MTA-Module: second-to-be-deployed
+
+Name: target/circular-0.0.1-SNAPSHOT.war
+MTA-Module: first-to-be-deployed
+
+Name: META-INF/mtad.yaml
+
